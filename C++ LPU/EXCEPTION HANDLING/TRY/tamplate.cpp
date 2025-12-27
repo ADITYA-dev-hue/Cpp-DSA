@@ -2,7 +2,7 @@
 using namespace std;
 
 template<typename T>
-
+//Template class
 class Base{
     public:
     T x;
@@ -13,6 +13,7 @@ class Base{
 };
 
 template<typename T1>
+//Method of inheritance from template class
 class child:public Base<T1>{
     public:
     int  y;
