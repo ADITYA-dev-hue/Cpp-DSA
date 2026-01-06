@@ -23,12 +23,18 @@ class A{
     }
     //Friend Function.
     friend void age_off(A &obj,int c);
-
+    //Virtual Function. function overriding..
     virtual double fun(){};
+
     //Operator Overloading..
     A operator +(A &obj){
         A newObj;
         newObj.id=id+obj.id;
+        return newObj;
+    }
+    A operator ++(){
+        A newObj;
+        newObj.id=++id;
         return newObj;
     }
     ~A(){
@@ -128,6 +134,11 @@ int main(){
     cout<<"Operator overloading String concatenate: ";
     sr3=sr1+sr2;
     cout<<sr3.name<<endl<<endl;
-
+    //Operator overloading ++
+    A obj4;
+    obj4.id=50;
+    A obj5;
+    obj5=++obj4;
+    cout<<"Operator overloading ++ : "<<obj4.id<<endl;
 
 }
