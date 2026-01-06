@@ -32,6 +32,7 @@ class A{
         newObj.id=id+obj.id;
         return newObj;
     }
+
     A operator ++(){
         A newObj;
         newObj.id=++id;
@@ -92,7 +93,7 @@ int main(){
     age_off(new_obj,9);
     cout<<"friend function age: "<<new_obj.age<<endl;
 
-    obj.fun();
+    cout<<obj.fun()<<endl;
 
     cout<<"Static data member g Value: ";
     cout<<A::g<<endl;
