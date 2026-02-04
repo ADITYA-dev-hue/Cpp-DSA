@@ -72,5 +72,19 @@ class StringOperation {
         System.out.println(sep.substring(7));
         System.out.println(sep.substring(3, 10));
 
+        // Extension 'georgewfraser.vscode-javac' not found.
+
+        // 12. SCP("String Constant Pool concept")
+        String store1 = "Java";
+        String store2 = "Java";
+        String store3 = "Python";
+        String store4 = new String("Java");
+        // SCP function......
+        System.out.println("SCP use in java");
+
+        System.out.println(store1 = store2);
+
+        System.out.println(store1 = store4);
+
     }
 }
