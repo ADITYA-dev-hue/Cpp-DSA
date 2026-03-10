@@ -23,10 +23,10 @@ class MutableString {
         System.out.println(sb1.lastIndexOf("2"));
 
         // 4. delete and deleteCharAt
-        sb1.delete(5, 7);
+        sb1.delete(5,6);
         System.out.println(sb1);
 
-        sb1.deleteCharAt(2);
+        sb1.deleteCharAt(6);
         System.out.println(sb1);
 
         // 5. replace()
@@ -37,5 +37,10 @@ class MutableString {
         StringBuilder sb2 = new StringBuilder("Programming");
         sb2.reverse();
         System.out.println(sb2);
+
+        
+        System.out.println(sb1);
+        sb1.deleteCharAt(18);
+        System.out.println(sb1);
     }
 }
