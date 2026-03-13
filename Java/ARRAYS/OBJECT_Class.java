@@ -42,14 +42,24 @@ public class OBJECT_Class {
         Data d2=new Data(5);
         
         
-        //equals() by default the purpose of equals() is to
+        //1. equals() by default the purpose of equals() is to
         //Compare object memory.
         //but we override it for specific purpose.
         System.out.println(d1.equals(d2)); // false
 
-        // toString(): by default the purpose of toString() is to
+        //2. toString(): by default the purpose of toString() is to
         //provide string version of object
         // but we can override it;
         System.out.println(d1.toString());
+
+        //3. hashCode(): this give hashValue of object
+        // that used in Hashing
+        System.out.println(d1.hashCode());
+        
+        //4. getClass(): provide name of Object's class
+        System.out.println(d1.getClass());
+
+        //5. notify(), notifyAll() and wait() are used in multithreading.
+
     }
 }
