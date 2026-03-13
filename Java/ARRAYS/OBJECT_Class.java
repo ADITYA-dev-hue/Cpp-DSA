@@ -9,13 +9,16 @@ class Data{
         Data d=(Data)obj;
         return this.id==d.id;
     }
+    @Override
+    public String  toString(){
+        return "Name : Aditya \nId: "+this.id;
+    }
 }
 
 
 
 public class OBJECT_Class {
     public static void main(String Args[]){
-
         // Object class is the parent class of all the classes in java
         // it is the root class of the class hierarchy in java
         // it is the superclass of all the classes in java
@@ -39,7 +42,14 @@ public class OBJECT_Class {
         Data d2=new Data(5);
         
         
-        
+        //equals() by default the purpose of equals() is to
+        //Compare object memory.
+        //but we override it for specific purpose.
         System.out.println(d1.equals(d2)); // false
+
+        // toString(): by default the purpose of toString() is to
+        //provide string version of object
+        // but we can override it;
+        System.out.println(d1.toString());
     }
 }
