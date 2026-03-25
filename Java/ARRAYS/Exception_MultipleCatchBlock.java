@@ -8,8 +8,8 @@ public class Exception_MultipleCatchBlock {
         int arr[]=new int[5];
 
         try {
-            int result = 10/0;
             System.out.println(arr[10]);
+            int result = 10/0;
         }
         catch (ArithmeticException e) {
             e.printStackTrace();

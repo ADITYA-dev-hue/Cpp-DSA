@@ -28,7 +28,7 @@ class FailExam extends Exception     //FailExam:  It is now use as type of excep
 //to throw custom exception
 
 class ResultChechker{
-    static int marks=35;
+    static int marks=45;
 
     static void checkMarks() throws FailExam {
         if(marks<40){
