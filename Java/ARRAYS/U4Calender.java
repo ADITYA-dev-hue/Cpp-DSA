@@ -10,12 +10,17 @@ public class U4Calender {
         System.out.println("Week Of Year: "+c.get(Calendar.WEEK_OF_YEAR));
         System.out.println("Week Of Month: "+c.get(Calendar.WEEK_OF_MONTH));
 
-        //What will be the day after 5 days
+        // What will be the day after 5 days
         c.add(Calendar.DAY_OF_MONTH,5);
         System.out.println("Day after 5 days: "+c.get(Calendar.DAY_OF_MONTH));
 
-        //What will be year after 5 years
-        c.add(Calendar.YEAR,+5);
-        System.out.println("Year after 5 year's: "+c.get(Calendar.YEAR));
+        // What will be the month after 5 months
+        c.add(Calendar.MONTH,5);
+        System.out.println("Month after 5 months: "+c.get(Calendar.MONTH));
+
+        // What will be year after 5 years
+        c.add(Calendar.YEAR,5);
+        System.out.println("Year after 5 years: "+c.get(Calendar.YEAR));
+        
     }
 }

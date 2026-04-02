@@ -8,7 +8,7 @@ class PrimitiveDT{
 		
 		int intVar = 345; //  -2^31 to (2^31)-1 // 4byte
 		
-		long longVar = 12333363493l;	// 8 byte
+		long longVar = 12333363493l;	// -2^63 TO (2^63)-1 // 8 byte
 	
 		float floatVar = 34.56f; // 4 byte
 
