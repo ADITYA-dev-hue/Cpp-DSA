@@ -10,6 +10,6 @@ public class ExampleInterface {
             }
         };
         Morning.Greet();
-
+        
     }
 }

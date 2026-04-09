@@ -25,7 +25,7 @@ class Phone{
 }
 public class ExamplePhNoValid {
     public static void main(String args[]){
-        String ph="76194486941";
+        String ph="7619448694";
         try{
             Phone p=new Phone(ph);
             p.PhValidity();
@@ -33,6 +33,8 @@ public class ExamplePhNoValid {
             System.out.println(e.getMessage());
         }catch(PhoneException e){
             System.out.println(e.getMessage());
+        }finally{
+            System.out.println("Code done");
         }
     }
 }
