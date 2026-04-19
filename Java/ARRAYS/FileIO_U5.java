@@ -1,8 +1,16 @@
+//Byte stream
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileReader;
+import java.io.FileReader;  // Character Stream
 import java.io.FileWriter;
 
+
+
+// Scanner , FileReader, FileWriter : Parse and scan each character that slow down the process.
+
+// Solution: 'BufferReader & BufferWriter': Parse and scan the file line by line that fast the process.
 public class FileIO_U5 {
     public static void main(String args[]){
 
@@ -75,5 +83,6 @@ public class FileIO_U5 {
         } catch (Exception e) {
             System.out.println(e);
         }
+
     }
 }
