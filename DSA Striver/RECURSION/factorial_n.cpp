@@ -13,6 +13,6 @@ int fact_r(int n){
 int main(){
     int n;
     cin>>n;
-
+    
     cout<<n<<"! = "<<fact_r(n);
 }
